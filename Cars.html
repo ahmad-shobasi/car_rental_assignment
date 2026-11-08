@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ar" lang="ar">
+  <head>
+    <title>السيارات والحجز - مكتب البرق</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Language" content="ar" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="page">
+      <div id="header">
+        <h1>مكتب البرق لتأجير السيارات</h1>
+        <p class="subtitle">اختر السيارة المناسبة لك</p>
+        <div id="navigation">
+          <a href="home.html">الرئيسية</a>
+          <a href="AboutUs.html">من نحن</a>
+          <a href="Cars.html" class="active">السيارات والحجز</a>
+        </div>
+      </div>
+      <div class="content">
+        <h2>السيارات المتوفرة</h2>
+        <p>
+          اضغط على مربع التفاصيل لإظهار معلومات السيارة أو إخفائها. يمكنك إظهار
+          تفاصيل أكثر من سيارة في الوقت نفسه.
+        </p>
+        <form id="carsForm" action="#" method="get">
+          <table class="cars-table">
+            <tr>
+              <th>الرمز</th>
+              <th>الموديل</th>
+              <th>سنة الصنع</th>
+              <th>السعر اليومي</th>
+              <th>إظهار التفاصيل</th>
+              <th>اختيار</th>
+            </tr>
+            <tr>
+              <td>CR-001</td>
+              <td>Ford Jeep</td>
+              <td>2006</td>
+              <td>1750 ل.س</td>
+              <td>
+                <input type="checkbox" class="details-toggle" id="details1" />
+              </td>
+              <td>
+                <input type="checkbox" class="car-select" value="CR-001" />
+              </td>
+            </tr>
+            <tr class="details-row" id="row-details1">
+              <td colspan="7">
+                <strong>تفاصيل Ford Jeep:</strong> الوقود: بنزين - ناقل الحركة:
+                أوتوماتيك - المقاعد: 5 - عداد الكيلومترات: 32000 كم - اللون:
+                أبيض.
+              </td>
+            </tr>
+            <tr>
+              <td>CR-002</td>
+              <td>Kia Reo</td>
+              <td>2018</td>
+              <td>3500 ل.س</td>
+              <td>
+                <input type="checkbox" class="details-toggle" id="details2" />
+              </td>
+              <td>
+                <input type="checkbox" class="car-select" value="CR-002" />
+              </td>
+            </tr>
+            <tr class="details-row" id="row-details2">
+              <td colspan="7">
+                <strong>تفاصيل Kia Reo:</strong> الوقود: بنزين - ناقل الحركة:
+                أوتوماتيك - المقاعد: 5 - عداد الكيلومترات: 41000 كم - اللون:
+                أسود.
+              </td>
+            </tr>
+            <tr>
+              <td>CR-003</td>
+              <td>Hyundai Elantra</td>
+              <td>2024</td>
+              <td>2000 ل.س</td>
+              <td>
+                <input type="checkbox" class="details-toggle" id="details3" />
+              </td>
+              <td>
+                <input type="checkbox" class="car-select" value="CR-003" />
+              </td>
+            </tr>
+            <tr class="details-row" id="row-details3">
+              <td colspan="7">
+                <strong>تفاصيل Hyundai Elantra:</strong> الوقود: بنزين - ناقل
+                الحركة: أوتوماتيك - المقاعد: 5 - عداد الكيلومترات: 12000 كم -
+                اللون: فضي.
+              </td>
+            </tr>
+            <tr>
+              <td>CR-004</td>
+              <td>Chevrolet Spark</td>
+              <td>2021</td>
+              <td>1800 ل.س</td>
+              <td>
+                <input type="checkbox" class="details-toggle" id="details4" />
+              </td>
+              <td>
+                <input type="checkbox" class="car-select" value="CR-004" />
+              </td>
+            </tr>
+            <tr class="details-row" id="row-details4">
+              <td colspan="7">
+                <strong>تفاصيل Chevrolet Spark:</strong> الوقود: بنزين - ناقل
+                الحركة: يدوي - المقاعد: 4 - عداد الكيلومترات: 56000 كم - اللون:
+                أحمر.
+              </td>
+            </tr>
+            <tr>
+              <td>CR-005</td>
+              <td>Firrary</td>
+              <td>2023</td>
+              <td>5000 ل.س</td>
+              <td>
+                <input type="checkbox" class="details-toggle" id="details5" />
+              </td>
+              <td>
+                <input type="checkbox" class="car-select" value="CR-005" />
+              </td>
+            </tr>
+            <tr class="details-row" id="row-details5">
+              <td colspan="7">
+                <strong>تفاصيل Firrary:</strong> الوقود: بنزين - ناقل الحركة:
+                أوتوماتيك - المقاعد: 5 - عداد الكيلومترات: 27000 كم - اللون:
+                أزرق.
+              </td>
+            </tr>
+          </table>
+          <p class="center">
+            <input
+              type="button"
+              id="continueButton"
+              value="متابعة"
+              class="main-button"
+            />
+          </p>
+        </form>
+
+        <div id="bookingArea" class="info-box hidden">
+          <h2>نموذج طلب الحجز</h2>
+          <p>
+            الحقول المشار إليها بعلامة
+            <span style="color: rgb(224, 31, 31)">(*)</span> إلزامية. باقي
+            الحقول اختيارية.
+          </p>
+          <form id="bookingForm" action="#" method="post">
+            <fieldset>
+              <legend>معلومات مقدم الطلب</legend>
+              <div class="form-row">
+                <label for="fullName">الاسم الكامل:</label>
+                <input type="text" id="fullName" name="fullName" />
+                <span class="field-note">أحرف عربية فقط عند إدخال الاسم.</span>
+              </div>
+              <div class="form-row">
+                <label for="nationalId"
+                  >الرقم الوطني
+                  <span style="color: rgb(224, 31, 31)">(*)</span> :</label
+                >
+                <input
+                  type="number"
+                  id="nationalId"
+                  name="nationalId"
+                  maxlength="11"
+                />
+                <span class="field-note"
+                  >11 خانة، وأول خانتين من 01 إلى 14.</span
+                >
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>مدة التأجير</legend>
+              <div class="form-row">
+                <label for="startDate"
+                  >تاريخ بداية التأجير
+                  <span style="color: rgb(224, 31, 31)">(*)</span>:</label
+                >
+                <input type="text" id="startDate" name="startDate" />
+                <span class="field-note">بالصيغة yyyy-mm-dd</span>
+              </div>
+              <div class="form-row">
+                <label for="endDate"
+                  >تاريخ نهاية التأجير
+                  <span style="color: rgb(224, 31, 31)">(*)</span>:</label
+                >
+                <input type="text" id="endDate" name="endDate" />
+                <span class="field-note">يجب أن يكون بعد تاريخ البداية.</span>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>معلومات التواصل</legend>
+              <div class="form-row">
+                <label for="mobile">رقم الموبايل:</label>
+                <input type="text" id="mobile" name="mobile" maxlength="10" />
+                <span class="field-note"
+                  >رقم سوري من شبكتي Syriatel أو MTN.</span
+                >
+              </div>
+              <div class="form-row">
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="text" id="email" name="email" />
+              </div>
+            </fieldset>
+            <p class="center">
+              <input
+                type="submit"
+                value="إرسال طلب الحجز"
+                class="main-button"
+              />
+            </p>
+          </form>
+          <div id="resultBox" class="result-box hidden"></div>
+        </div>
+      </div>
+      <div id="footer">
+        <p>جميع الحقوق محفوظة - مكتب البرق لتأجير السيارات</p>
+      </div>
+    </div>
+
+    <!--  -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+    ></script>
+    <script type="text/javascript" src="myFunctions.js"></script>
+  </body>
+</html>
